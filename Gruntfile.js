@@ -7,11 +7,11 @@ module.exports = function(grunt) {
     uglify: {
       options: {
         //用于在文件顶部生成一个注释
-        banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
+        banner: '/*! <%= grunt.template.today("yyyy-mm-dd") %> */\n'
       },
       build: {
-        src: 'public/javascripts/src/<%= pkg.name %>.js',
-        dest: 'public/javascripts/build/<%= pkg.name %>.min.js'
+        src: 'public/javascripts/datetimepicker.js',
+        dest: 'public/javascripts/build/datetimepicker.min.js'
       }
     },
     //watch任务是用来监控文件被改变时执行的任务
@@ -20,31 +20,24 @@ module.exports = function(grunt) {
       css: {
         //files属性用来监控任务中指定的目标文件
         files: [
-          '**/*.sass',
-          '**/*.scss'
+          'public/stylesheets/*.css'
         ],
         //tasks属性定义了Grunt任务的数组，执行改变项目目标中的文件
-        tasks: ['compass']
+        tasks: ['cssmin']
       },
       js: {
         files: [
-          'public/javascripts/src/*.js',
+          'public/javascripts/*.js',
           'Gruntfile.js'
         ],
         tasks: ['jshint']
       }
     },
-    //compass任务用来将Sass编译成css
-    compass: {
-      dist: {
-        options: {
-          //sass文件的目录
-          sassDir: 'public/stylesheets/sass',
-          //编译出来的css目录
-          cssDir: 'public/stylesheets/css',
-          //指定Sass代码要如何编译。
-          outputStyle: 'compressed'//编译出来的css将被压缩
-        }
+    //css压缩
+    cssmin: {
+      css: {
+          src: 'public/stylesheets/datetimepicker.css',
+          dest: 'public/stylesheets/build/datetimepicker.min.css'
       }
     },
     //jshint任务可以检测js代码是否有错误，也可用来统一代码风格
@@ -68,16 +61,16 @@ module.exports = function(grunt) {
         node: true
       },
       //用于指定那些文件用JSHint来检查
-      all: ['Gruntfile.js', 'public/javascripts/src/*.js']
+      all: ['Gruntfile.js', 'public/javascripts/*.js']
     },
     //browser-sync用于css样式注入。可处理css，图像，js和模板文件
     //使用WebSockets将消息发送到浏览器，触发样式的注入或页面的刷新，实现浏览器同步
-    browser-sync: {
+    browser_sync: {
       files: {
         src: [
-          'public/stylesheets/css/*.css',
+          'public/stylesheets/build/*.min.css',
           'public/images/*',
-          'public/javascripts/src/*.js',
+          'public/javascripts/build/*.min.js',
           'views/*.ejs'
         ]
       },
@@ -92,12 +85,12 @@ module.exports = function(grunt) {
 
   //加载grunt插件
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-compress');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-css');
   grunt.loadNpmTasks('grunt-browser-sync');
 
   //注册grunt默认任务
-  grunt.registerTask('default', ['uglify','browser-sync','watch']);
+  grunt.registerTask('default', ['uglify','cssmin']);
 
 };
