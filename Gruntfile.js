@@ -10,8 +10,8 @@ module.exports = function(grunt) {
         banner: '/*! <%= grunt.template.today("yyyy-mm-dd") %> */\n'
       },
       build: {
-        src: 'public/javascripts/datetimepicker.js',
-        dest: 'public/javascripts/build/datetimepicker.min.js'
+        src: 'public/javascripts/backbone.marionette.js',
+        dest: 'public/javascripts/build/backbone.marionette.min.js'
       }
     },
     //watch任务是用来监控文件被改变时执行的任务
@@ -91,6 +91,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-browser-sync');
 
   //注册grunt默认任务
-  grunt.registerTask('default', ['uglify','cssmin']);
+  grunt.registerTask('default', ['uglify']);
 
 };

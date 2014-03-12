@@ -1,6 +1,6 @@
 /**************有关项目中数据的设置*******************/
 module.exports = {
-    "cookieSecret":'PMT',	
+    "cookieSecret":'pmt',	
     "app": {
         "host": process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1',
         "port": process.env.OPENSHIFT_NODEJS_PORT || 8080
@@ -8,7 +8,7 @@ module.exports = {
     "mongodb": {
         "host": process.env.OPENSHIFT_MONGODB_DB_HOST||'127.0.0.1',
         "port": process.env.OPENSHIFT_MONGODB_DB_PORT|| 27017,
-        "name": 'blog',
+        "name": 'pmt',
         "user": process.env.OPENSHIFT_MONGODB_DB_USERNAME,
         "pass": process.env.OPENSHIFT_MONGODB_DB_PASSWORD
     },

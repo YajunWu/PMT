@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title>PMT</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+    <!--
+      <link rel="stylesheet" type="text/css" href="/stylesheets/build/bootstrap.min.css">
+    -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/build/datetimepicker.min.css">
+  </head>
+  <body>
+    <header></header>
+    <nav></nav>
+    <section>
+      <div id="content">
+          <table class="info-table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>age</th>
+                <th>操作</th>
+              </tr>
+            </thead>
+            <tbody>
+            
+              <tr id="addItem">
+                <td>
+                  <input class="username" name="username"></input>
+                </td>
+                <td>
+                   <input class="age" name="age"></input> 
+                </td>
+                <td>
+                  <a href="#" id="addOk">ok</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <input type="button" id="add" value="添加"></input>
+      </div>
+      <br/>
+    </section>
+    <aside></aside>
+    <footer></footer>
+    <script id="itemTemplate" type="text/template">
+      <td>
+         <div class="display"><%= username %></div>  
+         <div class="edit"><input class="username" name="username"></input>
+         </div> 
+      </td>
+      <td>
+        <div class="display"><%= age %></div>  
+        <div class="edit">  
+            <input class="age" name="age"></input>  
+        </div>  
+      </td>
+      <td>
+        <a href="#" class="del">删除</a>
+      </td>
+    </script>
+
+    <!--
+      <script type="text/javascript" src="/javascripts/build/jquery.min.js"></script>
+      <script type="text/javascript" src="/javascripts/build/bootstrap.min.js"></script>
+    -->
+    <script type="text/javascript" src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/javascripts/build/underscore.min.js"></script>
+    <script type="text/javascript" src="/javascripts/build/backbone.min.js"></script>
+    <script type="text/javascript" src="/javascripts/build/datetimepicker.min.js"></script>
+    <script type="text/javascript" src="/javascripts/infoMVC.js"></script>
+
+  </body>
+</html>
