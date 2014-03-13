@@ -8,7 +8,7 @@ module.exports = {
     "mongodb": {
         "host": process.env.OPENSHIFT_MONGODB_DB_HOST||'127.0.0.1',
         "port": process.env.OPENSHIFT_MONGODB_DB_PORT|| 27017,
-        "name": 'pmt',
+        "name": 'todo',
         "user": process.env.OPENSHIFT_MONGODB_DB_USERNAME,
         "pass": process.env.OPENSHIFT_MONGODB_DB_PASSWORD
     },
