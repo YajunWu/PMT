@@ -1,0 +1,3 @@
+#ingnore the file of gitignore
+.openshift/*
+

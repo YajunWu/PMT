@@ -27,5 +27,6 @@
         "grunt-css": ">0.0.0",
         "grunt-contrib-watch": "~0.5.3",
         "grunt-browser-sync": "~0.6.2"
-  }
+  },
+  "main": "server.js"
 }
