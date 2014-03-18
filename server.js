@@ -11,11 +11,11 @@ var express = require('express'),
 
 // Configuration
 app.configure(function(){
-     app.set('view options', {
-        layout:false
-     });
-    // app.set('views', __dirname + '/views');
-    // app.set('view engine', 'ejs');
+     // app.set('view options', {
+     //    layout:false
+     // });
+    app.set('views', __dirname + '/views');
+    app.set('view engine', 'ejs');
 
     app.use(express.logger('dev'));
     //app.use(express.json());
