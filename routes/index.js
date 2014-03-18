@@ -2,8 +2,9 @@ var contacts = require('../controllers/contacts');
 
 module.exports.initialize = function(app) {
 	app.get('/', function(req, res) {
-		
+		res.render('main',{title:'abc',layout:false})
 	});
+
     app.get('/api/contacts', contacts.index);
     app.post('/api/contacts', contacts.add);
     app.put('/api/contacts/:username', contacts.update);

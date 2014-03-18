@@ -9,13 +9,16 @@ var express = require('express'),
     app = express.createServer(),
     settings = require('./settings');
 
+
 // Configuration
 app.configure(function(){
-     // app.set('view options', {
-     //    layout:false
-     // });
     app.set('views', __dirname + '/views');
     app.set('view engine', 'ejs');
+    app.set("view options",{                                                                                  
+       open:"{{",                                                                                  
+       close:"}}",
+       //layout:false
+    });
 
     app.use(express.logger('dev'));
     //app.use(express.json());
