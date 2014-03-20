@@ -2,7 +2,7 @@ var contacts = require('../controllers/contacts');
 
 module.exports.initialize = function(app) {
 	app.get('/', function(req, res) {
-		res.render('main',{title:'abc',layout:false})
+		res.render('board',{name:'wyj',boardName:'first',layout:false})
 	});
 
     app.get('/api/contacts', contacts.index);

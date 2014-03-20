@@ -27,16 +27,6 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
-html {
-  height: 101%;
-}
-body {
-    font-family: "Microsoft Yahei", "Lucida Grande", Helvetica, Arial, Tahoma,sans-serif;
-    font-size: 62.5%;
-    line-height: 1;
-    z-index: 0;
-    position: relative;
-}
 ol, ul {
     list-style: none;
 }
@@ -66,6 +56,220 @@ p{
   line-height: 1.0em;
   color: #333;
 }
+html {
+  height: 101%;
+}
+body {
+    font-family: "Microsoft Yahei", "Lucida Grande", Helvetica, Arial, Tahoma,sans-serif;
+    font-size: 62.5%;
+    line-height: 18px;
+    z-index: 0;
+    position: relative;
+    background-color: rgb(35, 113, 159);
+    overflow: hidden;
+}
+/*header 和footer样式*/
+header,footer{
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  width:100%;
+}
+footer{
+  text-align: center;
+  padding:10px 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+header{
+  height: 43px;
+}
+
+.navbar{
+  margin: 0;
+  padding: 0;
+  border: none;
+  min-height: 20px;
+}
+nav{
+  padding: 3px 0;
+}
+.navbar-header a{
+  margin: 3px 0;
+}
+.main-icon{
+  position: absolute;
+  top:0;
+  left:50%;
+  margin: 3px 0;
+  margin-left: -20px;
+}
+.navbar-toggle{
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+.navbar-toggle:hover{
+  background-color: rgb(51,51,51);
+}
+.icon-bar{
+  background-color: rgb(255,255,255);
+}
+.navbar-form{
+  position: relative;
+  padding: 0px;
+  margin: 0px;
+}
+.navbar-form .btn{
+  position: absolute;
+  right: 0px;
+  top:0px;
+}
+.navbar-nav li a{
+  padding: 6px 12px;
+}
+/*左侧边栏*/
+#asideLeft{
+  position: fixed;
+  top:46px;
+  left:0;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0 3px 3px 0;
+  overflow: hidden;
+  width: 250px;
+  display: none;
+  z-index: 100;
+}
+.asideleft-content{
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin: 6px 4px 6px 6px;
+}
+.asideleft-content input{
+  margin: 0 0 6px;
+  padding: 6px;
+  width: 98%;
+}
+/*右侧边栏*/
+#asideRight{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 3px 0 0 3px;
+  overflow: hidden;
+  width: 250px;
+  display: none;
+  z-index: 100;
+}
+.asideright-content{
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin: 6px 4px 6px 6px;
+}
+/*主视图样式*/
+.main-content{
+  margin-top:43px;
+  padding: 0 10px;
+  font-size: 1.2em;
+  position: relative;
+}
+.board{
+  line-height: 30px;
+  overflow: hidden;
+  padding: 3px 0;
+}
+.board-left{
+  float: left;
+}
+.board-right{
+  float: right;
+  margin-right: 10px;
+
+}
+.board-left a{
+  color: #fff;
+  font-size: 1.4em;
+  font-weight: bold;
+  padding-left: 4px;
+  text-decoration: none;
+  padding: 2px 7px;
+  display: inline-block;
+}
+.board-right a{
+  font-size: 1.2em;
+  color: #fff;
+  padding: 2px 7px;
+  display: inline-block;
+}
+.board a:hover{
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.lists{
+  padding-bottom: 5px;
+  overflow-y:hidden;
+  overflow-x:auto;
+  white-space: nowrap;
+}
+.cardlist{
+  padding: 6px 8px 6px;
+  margin: 0 5px;
+  background-color: rgb(219, 219, 219);
+  border-radius: 5px;
+  display: inline-table;
+  vertical-align: top;
+  width:250px;
+  position: relative;
+}
+.cardlist-title{
+  font-weight: bold;
+  font-family: "隶书","Microsoft Yahei", "Lucida Grande", Helvetica, Arial, Tahoma,sans-serif;
+  line-height: 24px;
+  font-size: 1.4em;
+  padding-bottom: 6px;
+}
+.cardlist-content{
+  overflow-y:auto;
+  overflow-x:hidden;
+}
+.card{
+  background-color: rgb(255,255,255);
+  border-radius: 5px;
+  margin-bottom: 5px;
+  min-height: 20px;
+  line-height: 18px;
+  cursor: pointer;
+  position: relative;
+}
+.card-title{
+
+}
+.card-content{
+  color: rgb(57, 57, 57);
+  margin: 0 0 4px;
+  padding: 6px 8px 4px;
+  clear: both;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+.cardlis-foot{
+  padding: 5px 0;
+}
+.cardlis-foot a{
+  color: rgb(147, 147, 147);
+  text-decoration: none;
+  position: relative;
+}
+.listadd{
+  background-color: rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  padding: 12px 7px;
+}
+.listadd a{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+/*
 #content{
   width:500px;
   margin: 20px auto;
@@ -81,3 +285,4 @@ p{
 .info-table .edit, #addItem{
   display: none;
 }
+*/

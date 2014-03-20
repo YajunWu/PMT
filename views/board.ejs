@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title>PMT</title>
+    
+    <!--
+      <link rel="stylesheet" type="text/css" href="/stylesheets/build/bootstrap.min.css">
+    -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/build/datetimepicker.min.css">
+  </head>
+  <body>
+    {{- include header}}
+    <div class="main-content">
+      <aside id="asideLeft">
+        <div class="asideleft-content">
+          <input type="text" placeholder="Find boards by name…">
+        </div>
+
+      </aside>
+      <aside id="asideRight">
+        <div class="asideright-content">
+          menu
+        </div>
+      </aside>
+      <section>
+        <div class="board">
+          <div class="board-left">
+            <a href="#">{{= boardName}}</a>
+          </div>
+          <div class="board-right">
+            <a href="#" id="showMenu">显示菜单</a>
+          </div>
+        </div>
+        <ul class="lists">
+          <li class="cardlist">
+            <div class="cardlist-title">
+              todo
+            </div>
+            <div class="cardlist-content">
+              <ul>
+                <li class="card">
+                  <div class="card-title">
+
+                  </div>
+                  <div class="card-content">
+                    <a href="#">
+                      <span class="card-short-id hide">#1</span>寻找好的简历模板
+                    </a>
+                  </div>
+                </li>
+                <li class="card">
+                  <div class="card-title">
+                    
+                  </div>
+                  <div class="card-content">
+                    <a href="#">
+                      <span class="card-short-id hide">#1</span>寻找好的简历模板
+                    </a>
+                  </div>
+                </li>
+                <li class="card">
+                  <div class="card-title">
+                    
+                  </div>
+                  <div class="card-content">
+                    <a href="#">
+                      <span class="card-short-id hide">#1</span>寻找好的简历模板
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="cardlis-foot">
+              <a href="#">Add a card…</a>
+            </div>
+          </li>
+          <li class="cardlist">
+            <div class="cardlist-title">
+              todo
+            </div>
+            <div class="cardlist-content">
+              <ul>
+                <li class="card">
+                  <div class="card-title">
+
+                  </div>
+                  <div class="card-content">
+                    <a href="#">
+                      <span class="card-short-id hide">#1</span>寻找好的简历模板
+                    </a>
+                  </div>
+                </li>
+                <li class="card">
+                  <div class="card-title">
+                    
+                  </div>
+                  <div class="card-content">
+                    <a href="#">
+                      <span class="card-short-id hide">#1</span>寻找好的简历模板
+                    </a>
+                  </div>
+                </li>
+                <li class="card">
+                  <div class="card-title">
+                    
+                  </div>
+                  <div class="card-content">
+                    <a href="#">
+                      <span class="card-short-id hide">#1</span>寻找好的简历模板
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="cardlis-foot">
+              <a href="#">Add a card…</a>
+            </div>
+          </li>
+          <li class="cardlist">
+            <div class="cardlist-title">
+              todo
+            </div>
+            <div class="cardlist-content">
+              
+            </div>
+            <div class="cardlis-foot">
+              <a href="#">Add a card…</a>
+            </div>
+          </li>
+          <li class="cardlist listadd">
+            <a href="#">add a list...</a>
+          </li>
+        </ul>
+      </section>
+    </div>
+    
+    {{- include footer}}
+    <!--
+      <script type="text/javascript" src="/javascripts/build/jquery.min.js"></script>
+      <script type="text/javascript" src="/javascripts/build/bootstrap.min.js"></script>
+    -->
+    <script type="text/javascript" src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/javascripts/build/underscore.min.js"></script>
+    <script type="text/javascript" src="/javascripts/build/backbone.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $('#showAside').click(function(e) {
+        e.preventDefault();
+        $('#asideLeft').slideToggle();
+        $('#asideLeft input').focus();
+      });
+      $('#asideLeft input').blur(function() {
+        $('#asideLeft').hide();
+      });
+      $('#showMenu').click(function(e) {
+        e.preventDefault();
+        $('#asideRight').show();
+        //$('#asideRight').focus();
+      });
+      $('#asideRight').blur(function() {
+        $('#asideRight').hide();
+      });
+    });
+    </script>
+  </body>
+</html>
