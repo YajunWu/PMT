@@ -269,7 +269,8 @@ nav{
   text-decoration: none;
   color: rgba(255, 255, 255, 0.7);
 }
-/*
+
+/*test*/
 #content{
   width:500px;
   margin: 20px auto;
@@ -285,4 +286,3 @@ nav{
 .info-table .edit, #addItem{
   display: none;
 }
-*/
