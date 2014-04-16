@@ -1,3 +1,4 @@
+<!--
 <header class="navbar navbar-fixed-top">
   
     <div class="navbar-header">
@@ -11,7 +12,7 @@
       <button type="button" class="btn btn-info main-icon">todo</button>
     </div>
     <nav role="navigation">
-      <!-- toggle get grouped for better mobile display -->
+      
       <div class="collapse navbar-collapse" id="navbar-collapse-1">
         <form class="navbar-form navbar-left" role="search">
             <input type="text" class="form-control" placeholder="Search">
@@ -23,7 +24,65 @@
             <a href="#" class="btn btn-success">{{= name}}</a>
           </li>
         </ul>
-      </div><!-- /.navbar-collapse -->
+      </div>
     </nav>
   
 </header>
+-->
+<div id="header">
+  <a class="header-logo js-home-via-logo" href="/" title="Go back to your boards page.">
+      <span class="header-logo-loading"></span>
+      <span class="header-logo-default"></span>
+  </a>
+  <div class="header-boards-button">
+      <a class="header-btn header-boards js-boards-menu" title="View list of boards" href="#">
+          <span class="header-btn-icon icon-lg icon-board light"></span>
+          <span class="header-btn-text">Boards</span>
+      </a>
+  </div>
+  <form>
+      <a href="#" class="header-btn show-search-btn js-show-search" title="Search for boards, cards, members, and organizations.">
+          <span class="header-btn-icon icon-lg icon-search light"></span>
+      </a>
+      <div id="header-search">
+          <label for="search-text">Global Search</label>
+          <input id="search-text" type="text" autocomplete="off" autocorrect="off" spellcheck="false" value="">
+          <input id="search-submit" type="submit" value="Search">
+          <a class="header-btn header-search js-search-submit" href="#" title="Search for boards, cards, members, and organizations.">
+              <span class="header-btn-icon icon-lg icon-search light"></span>
+          </a>
+      </div>
+  </form>
+  <div>
+      <a class="header-btn header-woof woof-hide" href="#">
+          <span class="taco-talk-small-icon"></span>
+          <span class="header-btn-text">
+              <span class="left-arrow"></span>
+              <span class="js-phrase">New stuff!</span>
+          </span>
+      </a>
+  </div>
+  <div class="header-user">
+      <a class="header-btn header-btn-feedback js-open-feedback hide" title="You are seeing an early, experimental version of Trello. We would love your feedback!" href="#">
+          <span class="header-btn-icon icon-lg icon-comment light"></span>
+          <span class="header-btn-text">Give us feedback.</span>
+      </a>
+      <a class="header-btn hide upgrade" href="#" ,="" onclick="window.location.reload();">
+          <span class="icon-sm icon-reopen light"></span>
+          <span class="header-btn-text">Update Available</span>
+      </a>
+      <a class="header-btn js-open-add-menu" href="#" title="Add a new board or organization.">
+          <span class="header-btn-icon icon-lg icon-add light"></span>
+      </a>
+      <a class="header-btn header-member js-open-header-member-menu" href="#" title="Get access to your profile, help, and log out.">
+          <span class="member">
+              <span class="member-initials" title="{{= users.nameFull}}">{{= users.nameShort}}</span>
+              <span class="member-gold-badge" title="This member has Trello Gold."></span>
+          </span>
+          <span class="header-btn-text js-member-name">{{= users.name}}</span>
+      </a>
+      <a class="header-btn header-notifications js-open-header-notifications-menu" href="#" title="0 Notifications. Click to view notifications.">
+          <span class="header-btn-icon icon-lg icon-notification light"></span>
+      </a>
+  </div>
+</div>
