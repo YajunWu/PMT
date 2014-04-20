@@ -1,4 +1,4 @@
-<!--
+
 <header class="navbar navbar-fixed-top">
   
     <div class="navbar-header">
@@ -9,26 +9,29 @@
         <span class="icon-bar"></span>
       </button>
       <a class="btn btn-primary" herf="#" id="showAside">Boards</a>
-      <button type="button" class="btn btn-info main-icon">todo</button>
+      <span class="main-icon">todo</span>
     </div>
     <nav role="navigation">
       
       <div class="collapse navbar-collapse" id="navbar-collapse-1">
+        <!--
         <form class="navbar-form navbar-left" role="search">
             <input type="text" class="form-control" placeholder="Search">
-            <button type="submit" class="btn btn-info">ok</button>
+            <span class="glyphicon glyphicon-search"></span>
         </form>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#" class="btn btn-primary">Add</a></li>
-          <li>
-            <a href="#" class="btn btn-success">{{= name}}</a>
-          </li>
-        </ul>
+        -->
+        <div class="nav navbar-nav navbar-right">
+          <span style="margin-top:-1px; padding:9px 24px 9px 12px;" class="btn btn-primary glyphicon glyphicon-plus"></span>
+          <div class="btn-group">
+            <span class="btn btn-default" title="{{= users.name}}({{= users.nameShort}})">{{= users.nameShort}}</span>
+            <span class="btn btn-success">{{= users.name}}</span>
+          </div>
+        </div>
       </div>
     </nav>
   
 </header>
--->
+<!--
 <div id="header">
   <a class="header-logo js-home-via-logo" href="/" title="Go back to your boards page.">
       <span class="header-logo-loading"></span>
@@ -76,7 +79,7 @@
       </a>
       <a class="header-btn header-member js-open-header-member-menu" href="#" title="Get access to your profile, help, and log out.">
           <span class="member">
-              <span class="member-initials" title="{{= users.nameFull}}">{{= users.nameShort}}</span>
+              <span class="member-initials" title="{{= users.name}}({{= users.nameShort}})">{{= users.nameShort}}</span>
               <span class="member-gold-badge" title="This member has Trello Gold."></span>
           </span>
           <span class="header-btn-text js-member-name">{{= users.name}}</span>
@@ -86,3 +89,4 @@
       </a>
   </div>
 </div>
+-->

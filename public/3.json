@@ -1,0 +1,43 @@
+{
+    "id": "51d51796dcd4749c24001420",
+    "avatarHash": null,
+    "bio": "",
+    "bioData": {
+        "emoji": {}
+    },
+    "confirmed": true,
+    "fullName": "yajunwu",
+    "idPremOrgsAdmin": [],
+    "initials": "WYJ",
+    "memberType": "normal",
+    "products": [],
+    "status": "disconnected",
+    "url": "https://trello.com/wyj",
+    "username": "wyj",
+    "avatarSource": "none",
+    "email": "969639519@qq.com",
+    "gravatarHash": "43248f50de1dc790838c869fda6b38f4",
+    "idBoards": ["51d51796dcd4749c24001421", "51d516b5aa83377b4a000c3f", "5301a74742c8d180055de7d6", "53158f4090e0d1340a926949"],
+    "idBoardsInvited": [],
+    "idBoardsPinned": ["51d51796dcd4749c24001421", "51d516b5aa83377b4a000c3f", "5301a74742c8d180055de7d6", "53158f4090e0d1340a926949"],
+    "idOrganizations": [],
+    "idOrganizationsInvited": [],
+    "loginTypes": ["password"],
+    "newEmail": null,
+    "oneTimeMessagesDismissed": [],
+    "prefs": {
+        "sendSummaries": true,
+        "minutesBetweenSummaries": 60,
+        "minutesBeforeDeadlineToNotify": 1440,
+        "colorBlind": false,
+        "timezoneInfo": {}
+    },
+    "trophies": ["Android"],
+    "uploadedAvatarHash": null,
+    "premiumFeatures": [],
+    "paidAccount": {
+        "products": []
+    },
+    "notifications": [],
+    "organizations": []
+}

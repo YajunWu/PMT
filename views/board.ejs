@@ -17,290 +17,67 @@
         <div class="asideleft-content">
           <input type="text" placeholder="Find boards by name…">
         </div>
-
       </aside>
       <aside id="asideRight">
         <div class="asideright-content">
           menu
         </div>
+        <div class="toHide">
+          <span class="glyphicon glyphicon-chevron-right" style="color: #aaa; position: absolute; right: 3px; top: 6px;">
+        </div>
       </aside>
       <section>
         <div class="board">
           <div class="board-left">
-            <a href="#">{{= boardName}}</a>
+            <span class="name">{{= boardName}}</span>
+            <span class="glyphicon glyphicon-star" style="margin-left:10px;color:#fff;"></span>
+            <span class="glyphicon glyphicon-pencil" style="margin-left:10px;color:#fff;"></span>
+
           </div>
           <div class="board-right">
-            <a href="#" id="showMenu">显示菜单</a>
+            <a href="#" id="showMenu" class="glyphicon glyphicon-chevron-left"><span style="margin-left:5px;">显示菜单</span></a>
           </div>
         </div>
-        <ul class="lists">
-          <li class="cardlist">
-            <div class="cardlist-title">
-              todo
+        <div class="lists">
+          
+          
+          <div class="cardlist listadd">
+            <div class="hide">
+              <textarea cols='20' rows='2'></textarea>
+              <input class='addOk' type="button" value="添加">
             </div>
-            <div class="cardlist-content">
-              <ul>
-                <li class="card">
-                  <div class="card-title">
-
-                  </div>
-                  <div class="card-content">
-                    <a href="#">
-                      <span class="card-short-id hide">#1</span>寻找好的简历模板
-                    </a>
-                  </div>
-                </li>
-                <li class="card">
-                  <div class="card-title">
-                    
-                  </div>
-                  <div class="card-content">
-                    <a href="#">
-                      <span class="card-short-id hide">#1</span>寻找好的简历模板
-                    </a>
-                  </div>
-                </li>
-                <li class="card">
-                  <div class="card-title">
-                    
-                  </div>
-                  <div class="card-content">
-                    <a href="#">
-                      <span class="card-short-id hide">#1</span>寻找好的简历模板
-                    </a>
-                  </div>
-                </li>
-                <li class="card">
-                  <div class="card-title">
-                    
-                  </div>
-                  <div class="card-content">
-                    <a href="#">
-                      <span class="card-short-id hide">#1</span>寻找好的简历模板
-                    </a>
-                  </div>
-                </li>
-                <li class="card">
-                  <div class="card-title">
-                    
-                  </div>
-                  <div class="card-content">
-                    <a href="#">
-                      <span class="card-short-id hide">#1</span>寻找好的简历模板
-                    </a>
-                  </div>
-                </li>
-                <li class="card">
-                  <div class="card-title">
-                    
-                  </div>
-                  <div class="card-content">
-                    <a href="#">
-                      <span class="card-short-id hide">#1</span>寻找好的简历模板
-                    </a>
-                  </div>
-                </li>
-                <li class="card">
-                  <div class="card-title">
-                    
-                  </div>
-                  <div class="card-content">
-                    <a href="#">
-                      <span class="card-short-id hide">#1</span>寻找好的简历模板
-                    </a>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="cardlis-foot">
-              <a href="#">Add a card…</a>
-            </div>
-          </li>
-          <li class="cardlist">
-            <div class="cardlist-title">
-              todo
-            </div>
-            <div class="cardlist-content">
-              <ul>
-                <li class="card">
-                  <div class="card-title">
-
-                  </div>
-                  <div class="card-content">
-                    <a href="#">
-                      <span class="card-short-id hide">#1</span>寻找好的简历模板
-                    </a>
-                  </div>
-                </li>
-                <li class="card">
-                  <div class="card-title">
-                    
-                  </div>
-                  <div class="card-content">
-                    <a href="#">
-                      <span class="card-short-id hide">#1</span>寻找好的简历模板
-                    </a>
-                  </div>
-                </li>
-                <li class="card">
-                  <div class="card-title">
-                    
-                  </div>
-                  <div class="card-content">
-                    <a href="#">
-                      <span class="card-short-id hide">#1</span>寻找好的简历模板
-                    </a>
-                  </div>
-                </li>
-                <li class="card">
-                  <div class="card-title">
-                    
-                  </div>
-                  <div class="card-content">
-                    <a href="#">
-                      <span class="card-short-id hide">#1</span>寻找好的简历模板
-                    </a>
-                  </div>
-                </li>
-                <li class="card">
-                  <div class="card-title">
-                    
-                  </div>
-                  <div class="card-content">
-                    <a href="#">
-                      <span class="card-short-id hide">#1</span>寻找好的简历模板
-                    </a>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="cardlis-foot">
-              <a href="#">Add a card…</a>
-            </div>
-          </li>
-          <li class="cardlist">
-            <div class="cardlist-title">
-              todo
-            </div>
-            <div class="cardlist-content">
-              <ul>
-                <li class="card">
-                  <div class="card-title">
-
-                  </div>
-                  <div class="card-content">
-                    <a href="#">
-                      <span class="card-short-id hide">#1</span>寻找好的简历模板
-                    </a>
-                  </div>
-                </li>
-                <li class="card">
-                  <div class="card-title">
-                    
-                  </div>
-                  <div class="card-content">
-                    <a href="#">
-                      <span class="card-short-id hide">#1</span>寻找好的简历模板
-                    </a>
-                  </div>
-                </li>
-                <li class="card">
-                  <div class="card-title">
-                    
-                  </div>
-                  <div class="card-content">
-                    <a href="#">
-                      <span class="card-short-id hide">#1</span>寻找好的简历模板
-                    </a>
-                  </div>
-                </li>
-                <li class="card">
-                  <div class="card-title">
-                    
-                  </div>
-                  <div class="card-content">
-                    <a href="#">
-                      <span class="card-short-id hide">#1</span>寻找好的简历模板
-                    </a>
-                  </div>
-                </li>
-                <li class="card">
-                  <div class="card-title">
-                    
-                  </div>
-                  <div class="card-content">
-                    <a href="#">
-                      <span class="card-short-id hide">#1</span>寻找好的简历模板
-                    </a>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="cardlis-foot">
-              <a href="#">Add a card…</a>
-            </div>
-          </li>
-          <li class="cardlist">
-            <div class="cardlist-title">
-              todo
-            </div>
-            <div class="cardlist-content">
-              <ul>
-                <li class="card">
-                  <div class="card-title">
-
-                  </div>
-                  <div class="card-content">
-                    <a href="#">
-                      <span class="card-short-id hide">#1</span>寻找好的简历模板
-                    </a>
-                  </div>
-                </li>
-                <li class="card">
-                  <div class="card-title">
-                    
-                  </div>
-                  <div class="card-content">
-                    <a href="#">
-                      <span class="card-short-id hide">#1</span>寻找好的简历模板
-                    </a>
-                  </div>
-                </li>
-                <li class="card">
-                  <div class="card-title">
-                    
-                  </div>
-                  <div class="card-content">
-                    <a href="#">
-                      <span class="card-short-id hide">#1</span>寻找好的简历模板
-                    </a>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="cardlis-foot">
-              <a href="#">Add a card…</a>
-            </div>
-          </li>
-          <li class="cardlist">
-            <div class="cardlist-title">
-              todo
-            </div>
-            <div class="cardlist-content">
-              
-            </div>
-            <div class="cardlis-foot">
-              <a href="#">Add a card…</a>
-            </div>
-          </li>
-          <li class="cardlist listadd">
-            <a href="#">add a list...</a>
-          </li>
-        </ul>
+            <a href="#" class="add show">add a list...</a>
+          </div>
+        
+        </div>
       </section>
     </div>
     
     {{- include footer}}
+    <script id="cardlistTemplate" type="text/template">
+        <div class="cardlist-title">
+          <%= title %>
+        </div>
+        <div class="cardlist-content">
+          
+        </div>
+        <div class="cardlis-foot">
+          <div class="hide">
+            <textarea cols='20' rows='2'></textarea>
+            <input class='addOk' type="button" value="添加">
+          </div>
+          <a href="#" class="add show">Add a card…</a>
+        </div>
+    </script>
+    <script id="cardTemplate" type="text/template">
+      <div class="card-title">
+
+      </div>
+      <div class="card-content">
+        <span class="card-short-id hide"><%= idShort %></span>
+        <div><%= content %></div>
+      </div>
+    </script>
     <!--
       <script type="text/javascript" src="/javascripts/build/jquery.min.js"></script>
       <script type="text/javascript" src="/javascripts/build/bootstrap.min.js"></script>
@@ -311,6 +88,27 @@
     <script type="text/javascript" src="/javascripts/build/backbone.min.js"></script>
     <script type="text/javascript">
     $(document).ready(function() {
+      var totalHeight = $(document).height();
+      $('#asideRight').height(parseInt(totalHeight)-86);
+      $('#asideRight').css('maxHeight', parseInt(totalHeight)-86+'px');
+
+      $(window).resize(function() {
+        var totalHeight = $(document).height();
+        var totalWidth  = $(document).width(); 
+        var contentHeight = parseInt(totalHeight)-220;
+        var asideWidth = $('#asideRight').width();
+        $('.lists').height(parseInt(totalHeight)-140);
+        if($('#asideRight').is(":hidden")) {
+          $('.lists').width(parseInt(totalWidth)-20);
+        }
+        else{
+          $('.lists').width(parseInt(totalWidth)-parseInt(asideWidth)-20);
+        }
+        $('.cardlist-content').css('maxHeight', contentHeight+'px');
+        $('#asideRight').height(parseInt(totalHeight)-86);
+        $('#asideRight').css('maxHeight', parseInt(totalHeight)-86+'px');
+      });
+
       $('#showAside').click(function(e) {
         e.preventDefault();
         $('#asideLeft').slideToggle();
@@ -319,15 +117,213 @@
       $('#asideLeft input').blur(function() {
         $('#asideLeft').hide();
       });
+
       $('#showMenu').click(function(e) {
         e.preventDefault();
         $('#asideRight').show();
-        //$('#asideRight').focus();
+        var totalWidth  = $(document).width(); 
+        var asideWidth = $('#asideRight').width();console.log(asideWidth);
+        $('.lists').width(parseInt(totalWidth)-parseInt(asideWidth)-20);
       });
-      $('#asideRight').blur(function() {
+      $('#showMenu').mouseover(function(e) {
+        $(this).css('marginRight','20px').parent().css('backgroundColor','rgba(0, 0, 0, 0.1)');
+
+      });
+      $('#showMenu').mouseout(function(e) {
+        $(this).css('marginRight','0px').parent().css('backgroundColor','rgba(0, 0, 0, 0)');
+      });
+      $('#asideRight .toHide').click(function() {
+        var totalWidth  = $(document).width(); 
+        $('.lists').width(parseInt(totalWidth)-20);
         $('#asideRight').hide();
       });
+      $('#asideRight .toHide').mouseover(function() {
+        $(this).css('width','20px').css('left','-20px').find('span').css('color','#333').css('right','2px');
+      });
+      $('#asideRight .toHide').mouseout(function() {
+        $(this).css('width','22px').css('left','-22px').find('span').css('color','#aaa').css('right','3px');
+      });
+
     });
+    </script>
+    <script type="text/javascript">
+    var Card = Backbone.Model.extend({
+      //urlRoot:'/cards',
+      initialize: function() {
+        this.on('invalid', function(model, error) {
+          alert(error);
+          return false;
+        });
+      },
+      validate: function(attrs, options) {
+        if(attrs.content.length < 1) {
+          return "请输入内容";
+        }
+      }
+    });
+    var CardList = Backbone.Collection.extend({
+      model: Card
+      //url:'/cards'
+    });
+
+    var CardView = Backbone.View.extend({
+      tagName: 'div',
+      template: _.template($('#cardTemplate').html()),
+      events: {
+        'click .card-content': 'detail'
+      },
+      initialize: function() {
+        this.model.bind('change', this.render, this);
+        $(this.el).addClass('card');
+        //this.model.bind('destroy', this.remove, this);
+      },
+      render: function() {  
+        $(this.el).html(this.template(this.model.toJSON()));
+       // this.setText();  
+        return this;  
+      },  
+     // remove: function() {  
+     //   $(this.el).remove();  
+     // },  
+      detail: function() {
+        alert(this.model.get('content'));
+      }  
+    });
+    var Listcard = Backbone.Model.extend({
+      urlRoot:'/listcards',
+      initialize: function() {
+        this.on('invalid', function(model, error) {
+          alert(error);
+          return false;
+        });
+      },
+      validate: function(attrs, options) {
+        if(attrs.title.length < 1) {
+          return "请输入内容";
+        }
+      }
+    });
+    var Listcards = Backbone.Collection.extend({
+      model: Listcard,
+      url:'/listcards'
+    });
+
+    var listcards = new Listcards(); 
+    var CardListView = Backbone.View.extend({
+      tagName: 'div',
+      template: _.template($('#cardlistTemplate').html()),
+      events: {
+        'click .add': 'addItem',
+        'click .addOk': 'addCard'
+      },
+      initialize: function() {
+        $(this.el).html(this.template(this.model.toJSON()));
+        this.model.bind('change', this.render, this);
+        $(this.el).addClass('cardlist');
+        this.cards = new CardList(); 
+        this.cards.bind('add', this.addOneCard, this);
+        //this.cards.bind('reset', this.addAll, this);
+        var cardss = this.model.get('cards');
+        var len = cardss.length;
+        for(var i=0; i< len; i++) {
+          var attr = {};
+          attr.idShort = cardss[i].idShort;
+          attr.content= cardss[i].content;
+          var listcard = new Card(attr);
+          this.cards.add(listcard);
+         // this.addOneCard(listcard)
+        }
+        
+      },
+      render: function() {  
+        var totalHeight = $(document).height();
+        var totalWidth  = $(document).width(); 
+        var contentHeight = parseInt(totalHeight)-230;
+        $('.lists').height(parseInt(totalHeight)-140);
+        $('.lists').width(parseInt(totalWidth)-20);
+        $('.cardlist-content').css('maxHeight', contentHeight+'px');
+        return this;  
+      },
+      addItem: function(e) {
+        console.log($(this.el).find('.cardlis-foot div'))
+        $(this.el).find('.cardlis-foot div').removeClass('hide').addClass('show');
+        $(this.el).find('.cardlis-foot .add').removeClass('show').addClass('hide');
+        $(this.el).find('.cardlis-foot textarea').val('');
+      },
+      addCard: function(e) {
+        var attr = {};  
+        attr.content=$(this.el).find('.cardlis-foot textarea').val();
+        attr.idShort= this.model.get('cards').length;
+        var card = new Card(attr); 
+        $(this.el).find('.cardlis-foot div').removeClass('show').addClass('hide');
+        $(this.el).find('.add').removeClass('hide').addClass('show');
+        this.model.get('cards').push(card);
+        this.model.save();
+        this.cards.add(card); 
+      },
+      addOneCard : function(card){  
+        //card.set({"idShort":card.get("idShort")||this.model.get('cards').length});
+        card.bind('error',function(model,error){  
+          alert(error);  
+        });  
+        
+        var view = new CardView({model:card}); 
+        $(this.el).find('.cardlist-content').append(view.render().el);
+        //this.render(); 
+      },  
+      addAll : function(){  
+        this.cards.each(this.addOneCard);  
+      }  
+    });
+
+    var AppView = Backbone.View.extend({
+      el: $('.lists'),
+      events: {
+        'click .listadd .add': 'addItem',
+        'click .listadd .addOk': 'addList'
+      },
+      initialize: function() {
+        listcards.bind('add', this.addOne, this);
+        listcards.bind('reset', this.addAll, this);
+        listcards.fetch();
+      },
+      addItem: function(e) {
+        $(this.el).find('.listadd div').removeClass('hide').addClass('show');
+        $(this.el).find('.listadd .add').removeClass('show').addClass('hide');
+        $(this.el).find('.listadd textarea').val('');
+      },
+      addList: function(e) {
+        var listcard = new Listcard();  
+        var attr = {};  
+        attr.title=$(this.el).find('.listadd textarea').val();
+        attr.idShort=listcards.length;
+        $(this.el).find('.listadd div').removeClass('show').addClass('hide');
+        $(this.el).find('.listadd .add').removeClass('hide').addClass('show');
+        listcard.save(attr, {
+          error: function(model,error){
+            alert(error);
+          },
+          success:function(){
+            listcards.create(listcard); 
+          }
+        });
+      },
+      addOne : function(listcard){  
+        //listcard.set({"idShort":listcard.get("idShort")||listcards.length});
+        listcard.set({"id":listcard.get("id")||listcard.get('idShort')});
+        listcard.bind('error',function(model,error){  
+          alert(error);  
+        });  
+        var view = new CardListView({model:listcard});  
+        $(view.render().el).insertBefore('.listadd'); 
+
+      },  
+      addAll : function(){  
+        listcards.each(this.addOne);  
+      }  
+    });
+    window.App = new AppView(); 
+    
     </script>
   </body>
 </html>
