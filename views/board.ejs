@@ -88,14 +88,14 @@
     <script type="text/javascript" src="/javascripts/build/backbone.min.js"></script>
     <script type="text/javascript">
     $(document).ready(function() {
-      var totalHeight = $(document).height();
+      var totalHeight = $(window).height();
       $('#asideRight').height(parseInt(totalHeight)-86);
       $('#asideRight').css('maxHeight', parseInt(totalHeight)-86+'px');
 
       $(window).resize(function() {
-        var totalHeight = $(document).height();
-        var totalWidth  = $(document).width(); 
-        var contentHeight = parseInt(totalHeight)-220;
+        var totalHeight = $(window).height();
+        var totalWidth  = $(window).width(); 
+        var contentHeight = parseInt(totalHeight)-230;
         var asideWidth = $('#asideRight').width();
         $('.lists').height(parseInt(totalHeight)-140);
         if($('#asideRight').is(":hidden")) {
@@ -121,8 +121,8 @@
       $('#showMenu').click(function(e) {
         e.preventDefault();
         $('#asideRight').show();
-        var totalWidth  = $(document).width(); 
-        var asideWidth = $('#asideRight').width();console.log(asideWidth);
+        var totalWidth  = $(window).width(); 
+        var asideWidth = $('#asideRight').width();
         $('.lists').width(parseInt(totalWidth)-parseInt(asideWidth)-20);
       });
       $('#showMenu').mouseover(function(e) {
@@ -133,7 +133,7 @@
         $(this).css('marginRight','0px').parent().css('backgroundColor','rgba(0, 0, 0, 0)');
       });
       $('#asideRight .toHide').click(function() {
-        var totalWidth  = $(document).width(); 
+        var totalWidth  = $(window).width(); 
         $('.lists').width(parseInt(totalWidth)-20);
         $('#asideRight').hide();
       });
@@ -236,11 +236,11 @@
         
       },
       render: function() {  
-        var totalHeight = $(document).height();
-        var totalWidth  = $(document).width(); 
+        var totalHeight = $(window).height();
+        var totalWidth  = $(window).width(); 
         var contentHeight = parseInt(totalHeight)-230;
-        $('.lists').height(parseInt(totalHeight)-140);
-        $('.lists').width(parseInt(totalWidth)-20);
+        //$('.lists').height(parseInt(totalHeight)-140);
+        //$('.lists').width(parseInt(totalWidth)-20);
         $('.cardlist-content').css('maxHeight', contentHeight+'px');
         return this;  
       },
